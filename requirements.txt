@@ -1,0 +1,7 @@
+Django==2.2.10
+djangorestframework
+pytz==2021.1
+sqlparse==0.4.1
+drf-yasg
+psycopg2-binary==2.8.6
+gunicorn==20.0.4
