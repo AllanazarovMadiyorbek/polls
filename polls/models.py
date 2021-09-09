@@ -26,7 +26,7 @@ class Choice(models.Model):
 class Answer(models.Model):
     question = models.ForeignKey(Question,on_delete=models.CASCADE,related_name='answers')
     choice = models.ManyToManyField(Choice,related_name='answers')
-    user_id = models.IntegerField(verbose_name='числовой ID',unique=True)
+    user_id = models.IntegerField(verbose_name='числовой ID')
 
     class Meta:
         unique_together = ('question', 'user_id')
